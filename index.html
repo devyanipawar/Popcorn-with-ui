@@ -5,34 +5,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pop Corn Box Movie App</title>
-
-
-  <!-- 
-    - custom css link
-  -->
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-
-  <link rel="stylesheet" href="/css/style.css">
-
-  <script src="js/plugins.js"></script>
-
+  <title>Watch Movie Name</title>  
+  
   <!-- 
     - google font link
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body id="top">
+<body id="#top">
 
   <!-- 
     - #HEADER
   -->
 
+  
   <header class="header" data-header>
     <div class="container">
 
@@ -54,6 +47,7 @@
 
 
         <a href="login.html" class="btn btn-primary">Sign in</a>
+
 
       </div>
 
@@ -134,40 +128,47 @@
     </div>
   </header>
 
-
-
-
-
   <main>
     <article>
 
       <!-- 
-        - #HERO
+        - #MOVIE DETAIL
       -->
 
-      <section class="hero">
+      <section class="movie-detail">
+
+        <div class="video-player">
+          <video width="100%" height="240" controls>
+            <source src="Video/video-2.mp4" type="video/mp4">
+            <source src="Video/video-2.mp4" type="video/ogg">
+            <!-- Your browser does not support the video tag. -->
+          </video>
+        </div>
+
         <div class="container">
 
-          <div class="hero-content">
+          <div class="movie-detail-content">
 
-            <!-- <p class="hero-subtitle">PopCorn Movies</p> -->
-
-            <h1 class="h1 hero-title">
-              Unlimited <strong>Movie</strong>, TVs Shows, & More.
+            
+            <h1 class="h1 detail-title">
+              Free <strong>Guy</strong>
             </h1>
 
             <div class="meta-wrapper">
 
               <div class="badge-wrapper">
-                <!-- <div class="badge badge-fill">PG 18</div> -->
 
                 <div class="badge badge-outline">HD</div>
               </div>
 
               <div class="ganre-wrapper">
-                <a href="#">Romance,</a>
+                <a href="#">Comedy,</a>
 
-                <a href="#">Drama</a>
+                <a href="#">Action,</a>
+
+                <a href="#">Adventure,</a>
+
+                <a href="#">Science Fiction</a>
               </div>
 
               <div class="date-time">
@@ -175,92 +176,191 @@
                 <div>
                   <ion-icon name="calendar-outline"></ion-icon>
 
-                  <time datetime="2022">2022</time>
+                  <time datetime="2021">2021</time>
                 </div>
 
                 <div>
                   <ion-icon name="time-outline"></ion-icon>
 
-                  <time datetime="PT128M">128 min</time>
+                  <time datetime="PT115M">115 min</time>
                 </div>
 
               </div>
 
             </div>
 
-            <button class="btn btn-primary">
-              <ion-icon name="play"></ion-icon>
-
-              <span>Watch now</span>
-            </button>
-
-          </div>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #UPCOMING
-      -->
-
-      <section class="upcoming">
-        <div class="container">
-
-          <div class="flex-wrapper">
-
-            <div class="title-wrapper">
-              <p class="section-subtitle">Online Streaming</p>
-
-              <h2 class="h2 section-title">Blockbaster Movies</h2>
-            </div>
-
+            <p class="storyline">
+              A bank teller called Guy realizes he is a background character in an open world video game called Free
+              City that will
+              soon go offline.
+            </p>
 
           </div>
 
-          <ul class="movies-list  has-scrollbar" id="movieList">
-
-          </ul>
-
         </div>
-      </section>
 
-      <!-- 
-        - #TV shows
-      -->
-
-      <section class="tv-series">
-        <div class="container">
-
-          <p class="section-subtitle">Best TV Shows</p>
-
-          <h2 class="h2 section-title">World Best TV Show</h2>
-
-          <ul class="movies-list" id="showList">
-
-
-          </ul>
-
-        </div>
       </section>
 
 
+
+
+
       <!-- 
-        - #Music list
+        - #TV SERIES
       -->
 
-      <section class="tv-series">
+      <section class="tv-series" style="padding-top: 10px;">
         <div class="container">
 
-          <p class="section-subtitle">Best Music</p>
+          <p class="section-subtitle">Best TV Series</p>
 
-          <h2 class="h2 section-title">World Best Music</h2>
+          <h2 class="h2 section-title">World Best TV Series</h2>
 
-          <ul class="movies-list" id="songList">
+          <ul class="movies-list">
 
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="/images/series-1.png" alt="Moon Knight movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Moon Knight</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT47M">47 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.6</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="/images/series-2.png" alt="Halo movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Halo</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT59M">59 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.8</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="/images/series-3.png" alt="Vikings: Valhalla movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Vikings: Valhalla</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT51M">51 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.3</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="/images/series-4.png" alt="Money Heist movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Money Heist</h3>
+                  </a>
+
+                  <time datetime="2017">2017</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">4K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT70M">70 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.3</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
 
           </ul>
 
@@ -372,7 +472,7 @@
       <div class="container">
 
         <p class="copyright">
-          &copy; 2022 <a href="#">Lorem ipsum dolor.</a>. All Rights Reserved
+          &copy; 2022 <a href="#">codewithsadee</a>. All Rights Reserved
         </p>
 
         <img src="/images/footer-bottom-img.png" alt="Online banking companies logo" class="footer-bottom-img">
@@ -381,10 +481,6 @@
     </div>
 
   </footer>
-
-
-
-
 
   <!-- 
     - #GO TO TOP
@@ -403,14 +499,12 @@
   -->
   <script src="/js/script.js"></script>
 
-  <script src="js/load-script.js"></script>
-
   <!-- 
     - ionicon link
   -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
 
