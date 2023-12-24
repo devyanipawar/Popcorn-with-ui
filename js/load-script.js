@@ -39,6 +39,12 @@ function loadContent(){
                 </div>
               </div>
 
+              <div class="row mt-4">
+                  <div class="col-lg-12">
+                    <button class="btn favBtn">Add to favorite</button>
+                  </div>
+                </div>
+
             </div>
           </li>`
         });
@@ -87,6 +93,12 @@ function loadContent(){
                   <data>8.5</data>
                 </div>
               </div>
+
+              <div class="row mt-4">
+                  <div class="col-lg-12">
+                    <button class="btn favBtn">Add to favorite</button>
+                  </div>
+                </div>
 
             </div>
           </li>`
@@ -138,6 +150,12 @@ function loadContent(){
                   <data>8.5</data>
                 </div>
               </div>
+
+              <div class="row mt-4">
+                  <div class="col-lg-12">
+                    <button class="btn favBtn">Add to favorite</button>
+                  </div>
+                </div>
 
             </div>
           </li>`
